@@ -1,0 +1,69 @@
+* {
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 80px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    height: 80px;
+    padding: 35px;
+}
+
+.navBarTitle {
+    text-shadow: none;
+}
+
+.navBarTitle em {
+    font-style: normal;
+    color: #f7c552;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navBarTitle:not(em) {
+    font-style: normal;
+    text-transform: uppercase;
+    
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.parallax .baner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.baner {
+    width: 100%;
+    padding-top: 35vh;
+    text-align: center;
+    background-image: url(/assets/banner_bg.jpg);
+    vertical-align: middle;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-size: cover;
+}
