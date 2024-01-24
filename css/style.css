@@ -1,2 +1,12 @@
 @import url(header.css);
+@import url(home.css);
+@import url(aboutUs.css);
+@import url(portfolio.css);
+@import url(blog.css);
+@import url(contactUs.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
 
