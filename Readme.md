@@ -1,6 +1,11 @@
 # CDA
 
 ## Brief 2 - Tinker
+
+### Résumé
+Ce brief était à faire à deux : [Adam MARTIN](https://github.com/HaelyosStudio) et [Christopher MORON](https://github.com/TryZorce).  
+Nous avons décidé de réaliser un projet HTML/CSS/JS. Nous avons commencé par analyser la demande et créer un [Trello](https://trello.com/invite/b/kJYmI3uo/ATTI21443578ec8b0f4f415a96457960e112D9C81030/brief-tinker) sur lequel nous avons pu nous organiser. Nous avons également créé un dépôt [Github](https://github.com/HaelyosStudio/Brief-2-Tinker) pour partager notre code.
+
 ### Commande à effectuer :
 
 ```shell
@@ -38,6 +43,3 @@ Le powerpoint de présentation :
 - Tout ce que vous avez utilisé (Trello, maquette, etc)
 - Un dépôt Git contenant le projet au complet
 - Un rendu Simplonline avec un lien vers le dépôt Git + liens vers le reste## Documentation
-
-Ce brief était à faire à deux : [Adam MARTIN](https://github.com/HaelyosStudio) et [Christopher MORON](https://github.com/TryZorce).  
-Nous avons décidé de réaliser un projet HTML/CSS/JS. Nous avons commencé par analyser la demande et créer un [Trello](https://trello.com/invite/b/kJYmI3uo/ATTI21443578ec8b0f4f415a96457960e112D9C81030/brief-tinker) sur lequel nous avons pu nous organiser. Nous avons également créé un dépôt [Github](https://github.com/HaelyosStudio/Brief-2-Tinker) pour partager notre code.
