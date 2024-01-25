@@ -1,124 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="navBar">
-            <a href="#" class="navBarTitle"><em>T</em>inker</a>
-            <nav>
-                <button type="button" id="navToggle" class="navBarToggle" data-toggle="collapse" data-target="mainNav">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                      
-                    <!-- <span class="iconBar"></span>
-                    <span class="iconBar"></span>
-                    <span class="iconBar"></span> -->
-                </button>
-            </nav>
-            <ul class="navBarChoices">
-                <li>
-                    <a href="#" class="scrollLink" data-id="topPage">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="scrollLink" data-id="aboutUs">About Us</a>
-                </li>
-                <li>
-                    <a href="#" class="scrollLink" data-id="portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" class="scrollLink" data-id="blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#" class="scrollLink" data-id="contactUs">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+      <div class="navBar">
+        <a href="#" class="navBarTitle"><em>T</em>inker</a>
+        <nav>
+          <button
+            type="button"
+            id="navToggle"
+            class="navBarToggle"
+            data-toggle="collapse"
+            data-target="mainNav"
+            onclick="burgerOpenClose()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </nav>
+        <ul class="navBarChoices">
+          <li>
+            <a href="#" class="scrollLink" data-id="topPage">Home</a>
+          </li>
+          <li>
+            <a href="#" class="scrollLink" data-id="aboutUs">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="scrollLink" data-id="portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="scrollLink" data-id="blog">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="scrollLink" data-id="contactUs">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navBurgerChoices open">
+        <ul>
+          <li class="scrollBurgerBox">
+            <a href="#" class="scrollBurgerLink" data-id="topPage">Home</a>
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#" class="scrollBurgerLink" data-id="aboutUs">About Us</a>
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#" class="scrollBurgerLink" data-id="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#" class="scrollBurgerLink" data-id="blog">Blog</a>
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#" class="scrollBurgerLink" data-id="contactUs"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
-    <div class="parallax baner" id="home" style="background-position: center calc(50% + 0px);">
-        <div class="homeTextContainer">
-            <h2>
-                <em class="h2EmText">TINKER</em>
-                <span class="h2SpanText">HTML5</span>
-                Template
-            </h2>
-            <p>Tinker is a responsive CSS template provided by templatemo site. This design can be<br>applied for any kind of website. Please mention our site to your colleagues. Thank you.</p>
-            <div>
-                <a href="#" class="homeScrollLink" data-id="aboutUs">Let's start</a>
-            </div>
+    <div
+      class="parallax baner"
+      id="home"
+      style="background-position: center calc(50% + 0px)"
+    >
+      <div class="homeTextContainer">
+        <h2>
+          <em class="h2EmText">TINKER</em>
+          <span class="h2SpanText">HTML5</span>
+          Template
+        </h2>
+        <p>
+          Tinker is a responsive CSS template provided by templatemo site. This
+          design can be<br />applied for any kind of website. Please mention our
+          site to your colleagues. Thank you.
+        </p>
+        <div>
+          <a href="#" class="homeScrollLink" data-id="aboutUs">Let's start</a>
         </div>
+      </div>
     </div>
+
+
+
     <!-- Section aboutUs -->
 
 
+
+
     <div class="aboutUs">
-        <div class="aboutUsRow" style="background-position: center calc(50% + 474px);">
-            <div class="item">
-                <div class="itemIcon">
-                    <img src="../assets/service_icon_01.png">
-                </div>
-                <p class="itemTitle">Smart Notifications</p>
-                <div class="itemSeparator"></div>
-                <p class="itemDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque
-                    itaque
-                    iure id, quos
-                    aliquid eos quas iste ratione sapiente.</p>
-                <a href="" class="itemButton">Continue Reading</a>
-            </div>
-            <div class="item">
-                <div class="itemIcon">
-                    <img src="../assets/service_icon_02.png">
-                </div>
-                <p class="itemTitle">Smart Notifications</p>
-                <div class="itemSeparator"></div>
-                <p class="itemDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque
-                    itaque
-                    iure id, quos
-                    aliquid eos quas iste ratione sapiente.</p>
-                <a href="" class="itemButton">Continue Reading</a>
-            </div>
+      <div
+        class="aboutUsRow"
+        style="background-position: center calc(50% + 474px)"
+      >
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_01.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
         </div>
-        <div class="aboutUsRow">
-            <div class="item">
-                <div class="itemIcon">
-                    <img src="../assets/service_icon_03.png">
-                </div>
-                <p class="itemTitle">Smart Notifications</p>
-                <div class="itemSeparator"></div>
-                <p class="itemDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque
-                    itaque
-                    iure id, quos
-                    aliquid eos quas iste ratione sapiente.</p>
-                <a href="" class="itemButton">Continue Reading</a>
-            </div>
-            <div class="item">
-                <div class="itemIcon">
-                    <img src="../assets/service_icon_04.png">
-                </div>
-                <p class="itemTitle">Smart Notifications</p>
-                <div class="itemSeparator"></div>
-                <p class="itemDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque
-                    itaque
-                    iure id, quos
-                    aliquid eos quas iste ratione sapiente.</p>
-                <a href="" class="itemButton">Continue Reading</a>
-            </div>
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_02.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
         </div>
+      </div>
+      <div class="aboutUsRow">
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_03.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_04.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+      </div>
     </div>
+
 
 
     <!-- Fin de section aboutUs -->
 
-    <script src="/js/main.js"></script>
-</body>
 
+
+    <!-- Debut de la section Porfolio -->
+
+
+
+    <div class="portfolio">
+        <div class="portfolioGallery">
+          <div class="portfolioText">
+            <h2>Our Gallery</h2>
+            <div class="portfolioSeparator"></div>
+            <p>
+              In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed
+              enim ante, bibendum nec dictum ac, gravida ac lectus.
+            </p>
+            <p>Show all</p>
+            <p>Branding</p>
+            <p>Graphic</p>
+            <p>Nature</p>
+            <p>Animation</p>
+          </div>
+          <div class="portfolioImage">
+            <img src="../assets/portfolio_big_item_01.jpg" />
+            <img src="../assets/portfolio_big_item_02.jpg" />
+            <img src="../assets/portfolio_big_item_03.jpg" />
+            <img src="../assets/portfolio_big_item_04.jpg" />
+            <img src="../assets/portfolio_big_item_05.jpg" />
+            <img src="../assets/portfolio_big_item_06.jpg" />
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    <!-- Fin de section Portfolio -->
+
+    <!-- Debut de la section Blog -->
+
+
+    
+    <div class="blogBackground" id="blog" style="background-position: center calc(50% + 0px)">
+        <div class="blogBox">
+            <div class="blogLeftSection">
+            </div>
+            <div class="blogRightSection">
+    
+            </div>
+        </div>
+    </div>
+    <script src="/js/burger.js"></script>
+  </body>
 </html>

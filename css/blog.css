@@ -1,0 +1,45 @@
+.blogBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(../assets/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blogBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.blogLeftSection {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+    .blogBox {
+        margin-left: 15x;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blogBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}

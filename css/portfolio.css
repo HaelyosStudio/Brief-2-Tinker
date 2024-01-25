@@ -1,0 +1,52 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h2{
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+  .portfolioGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #33c1cf;
+    width: 100%;
+  }
+  
+  .portfolioText {
+    height: 500px;
+    width: 80%;
+    color: white;
+    text-align: center;
+  }
+  
+  .portfolioImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  
+  .portfolioImage img {
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .portfolioSeparator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .portfolioImage img  {
+width: 25%;
+    }
+    
+}
