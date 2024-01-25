@@ -12,31 +12,146 @@
 
 .blogBox {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    padding: 0px 0px 10px 0px;
     margin-right: 0px;
     margin-left: 0px;
 }
 
 .blogLeftSection {
-    background-color: black;
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 500px;
+    gap: 15px;
+}
+
+.blogLeftSection p {
+    color: white;
+    font-size: smaller;
+    padding: 0px, 30px;
+}
+
+.blogLeftTopSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 500px;
+    gap: 15px;
+}
+
+.blogMainH4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.blogLine {
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 270px;
+}
+
+.blogButtonsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%; 
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.blogButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.blogTextButtons {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+}
+
+.blogTextButtons:hover {
+    color: #f7c552;
+}
+
+.blogRightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px;
+}
+
+.blogImg {
+ width: 100%;
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    padding: 0px 20px 30px 20px;
+}
+
+.blogContentTitle {
+    color: black;
+    word-spacing: 1px;
+    margin-top: 25px;
+}
+
+.blogSpan {
+    margin: 5px 0px 15px 0px;
+}
+
+.blogSpanText {
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: normal;
+    color: #33c1cf;
+}
+
+.blogContentParagraph {
+    font-size: small;
+    color: #7a7a7a;
 }
 
 @media screen and (min-width: 768px) {
     .blogBox {
-        margin-left: 15x;
-        margin-right: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .blogBox {
         margin-left: 0px;
         margin-right: 0px;
+        flex-direction: row;
     }
 }
 
