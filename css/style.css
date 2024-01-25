@@ -11,3 +11,6 @@
     font-family: 'Roboto', arial, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
