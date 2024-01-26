@@ -23,6 +23,14 @@ h2 {
   color: white;
   text-align: center;
 }
+
+.portfolioText H2{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
 .portfolioSelector {
   margin-top: 30px;
 }
@@ -71,17 +79,38 @@ h2 {
     margin-left: 20px;
   }
 }
+
+
 @media screen and (min-width: 1000px) {
   .portfolioGallery {
     flex-direction: row;
   }
-  .portfolioText {
-    width: 45%;
+
+  .portfolioSeparator {
+    width: 80%;
   }
+
+  .portfolioText {
+    width: 40%;
+    text-align: start;
+    margin-left: 40px;
+  }
+
+
+  .portfolioText > p {
+padding-right: 100px;
+  }
+
+  .portfolioSelector p{
+    padding-left:unset ;
+  }
+
   .portfolioImageWrapper {
+    height: 100%;
+    margin: 0px;
     align-items: unset;
-    width: 45%;
-    padding: 10px 0px 10px 0px;
+    width: 66%;
+    padding: 30px 0px 30px 0px;
   }
 
   .portfolioImageWrapper img {

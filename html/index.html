@@ -12,12 +12,16 @@
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/fb6495d315.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
 
   <body>
     <header class="header">
-      <div class="navBar">
+      <div class="navBar scrolled">
         <a href="#" class="navBarTitle"><em>T</em>inker</a>
         <nav>
           <button
@@ -34,7 +38,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="w-6 h-6 scrolledButton"
             >
               <path
                 stroke-linecap="round"
@@ -46,40 +50,50 @@
         </nav>
         <ul class="navBarChoices">
           <li>
-            <a href="#" class="scrollLink" data-id="topPage">Home</a>
+            <a href="#home" class="scrollLink scrolled" data-id="topPage"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#" class="scrollLink" data-id="aboutUs">About Us</a>
+            <a href="#aboutUs" class="scrollLink scrolled" data-id="aboutUs"
+              >About Us</a
+            >
           </li>
           <li>
-            <a href="#" class="scrollLink" data-id="portfolio">Portfolio</a>
+            <a href="#portfolio" class="scrollLink scrolled" data-id="portfolio"
+              >Portfolio</a
+            >
           </li>
           <li>
-            <a href="#" class="scrollLink" data-id="blog">Blog</a>
+            <a href="#blog" class="scrollLink scrolled" data-id="blog">Blog</a>
           </li>
           <li>
-            <a href="#" class="scrollLink" data-id="contactUs">Contact Us</a>
+            <a href="#contactUs" class="scrollLink scrolled" data-id="contactUs"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>
       <div class="navBurgerChoices open">
         <ul>
           <li class="scrollBurgerBox">
-            <a href="#" class="scrollBurgerLink" data-id="topPage">Home</a>
+            <a href="#home" class="scrollBurgerLink" data-id="topPage">Home</a>
           </li>
           <li class="scrollBurgerBox">
-            <a href="#" class="scrollBurgerLink" data-id="aboutUs">About Us</a>
+            <a href="#aboutUs" class="scrollBurgerLink" data-id="aboutUs"
+              >About Us</a
+            >
           </li>
           <li class="scrollBurgerBox">
-            <a href="#" class="scrollBurgerLink" data-id="portfolio"
+            <a href="#portfolio" class="scrollBurgerLink" data-id="portfolio"
               >Portfolio</a
             >
           </li>
           <li class="scrollBurgerBox">
-            <a href="#" class="scrollBurgerLink" data-id="blog">Blog</a>
+            <a href="#blog" class="scrollBurgerLink" data-id="blog">Blog</a>
           </li>
           <li class="scrollBurgerBox">
-            <a href="#" class="scrollBurgerLink" data-id="contactUs"
+            <a href="#contactUs" class="scrollBurgerLink" data-id="contactUs"
               >Contact Us</a
             >
           </li>
@@ -92,7 +106,7 @@
       style="background-position: center calc(50% + 0px)"
     >
       <div class="homeTextContainer">
-        <h2>
+        <h2 id="home">
           <em class="h2EmText">TINKER</em>
           <span class="h2SpanText">HTML5</span>
           Template
@@ -110,7 +124,7 @@
 
     <!-- Section aboutUs -->
 
-    <div class="aboutUs">
+    <div class="aboutUs" id="aboutUs">
       <div
         class="aboutUsRow"
         style="background-position: center calc(50% + 474px)"
@@ -166,6 +180,7 @@
           <a href="" class="itemButton">Continue Reading</a>
         </div>
       </div>
+      <div id="portfolio"></div>
     </div>
 
     <!-- Fin de section aboutUs -->
@@ -217,22 +232,40 @@
         </div>
       </div>
     </div>
-
+    <div class="reviewsWrapper">
+      <div class="reviewsContainer">
+        <p>
+          “ Suspendisse magna mauris, convallis vel finibus eget, lobortis
+          dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”
+        </p>
+      </div>
+      <p>John Henry</p>
+      <p class="reviewJob">Art Director</p>
+      <div class="reviewsDots">
+        <span class="dots"></span>
+        <span class="dots active"></span>
+        <span class="dots"></span>
+        <span class="dots" id="blog"></span>
+      </div>
+    </div>
     <!-- Fin de section Portfolio -->
 
     <!-- Debut de la section Blog -->
 
-    <div class="blogBackground" id="blog" style="background-position: center calc(50% + 0px)">
+    <div
+      class="blogBackground"
+      style="background-position: center calc(50% + 0px)"
+    >
       <div class="blogBox">
         <div class="blogLeftSection">
-            <div class="blogLeftTopSection">
-                <h4 class="blogMainH4">Our Blog Posts</h4>
-                <div class="blogLine"></div>
-                <p class="blogMainText">
-                  Nam vulputate elementum nulla, sit amet congue ipsum malesuada
-                  pretium. Vivamus vel gravida quam.
-                </p>
-            </div>
+          <div class="blogLeftTopSection">
+            <h4 class="blogMainH4">Our Blog Posts</h4>
+            <div class="blogLine"></div>
+            <p class="blogMainText">
+              Nam vulputate elementum nulla, sit amet congue ipsum malesuada
+              pretium. Vivamus vel gravida quam.
+            </p>
+          </div>
           <ul class="blogButtonsBox">
             <li class="blogButtons">
               <a href="#" class="blogTextButtons">Nulla Eget Convallis Augue</a>
@@ -252,7 +285,8 @@
           <img
             src="/assets/blog_item_01.jpg"
             class="blogImg"
-            alt="Image trop drôle xptdr ça ce fois ils ce marrent xDDD wlh j'en peut plus jsuis plié de rire tellement les deux sur la photo ils rigolent. J'arrive pas à faire cette function : functionmakeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup(){letburger='Hamburger';letonions='Oignonstranchésenfineslamelles';burger+='avec'+onions;letketchup='Ketchup';burger+='etétaléavec'+ketchup;return burger;}console.log(makeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup()); Ben elle marche ta fonction , il ce passe quoi ? et pourquoi tu veut faire une fonction pour faire des burgers ? j'ai pas compris le délire xDDDD C'est juste que j'ai faim du coup je fait une fonction pour me faire a manger, logique non ? Ben ouai logique"/>
+            alt="Image trop drôle xptdr ça ce fois ils ce marrent xDDD wlh j'en peut plus jsuis plié de rire tellement les deux sur la photo ils rigolent. J'arrive pas à faire cette function : functionmakeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup(){letburger='Hamburger';letonions='Oignonstranchésenfineslamelles';burger+='avec'+onions;letketchup='Ketchup';burger+='etétaléavec'+ketchup;return burger;}console.log(makeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup()); Ben elle marche ta fonction , il ce passe quoi ? et pourquoi tu veut faire une fonction pour faire des burgers ? j'ai pas compris le délire xDDDD C'est juste que j'ai faim du coup je fait une fonction pour me faire a manger, logique non ? Ben ouai logique"
+          />
           <div class="blogContent">
             <h4 class="blogContentTitle">Nulla eget convallis augue</h4>
             <span class="blogSpan">
@@ -265,10 +299,86 @@
               lectus elementum, porta felis. Class aptent taciti sociosqu ad
               litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
+            <div id="contactUs"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Fin de la section blog -->
+    <!-- Debut de la section Contact Us -->
+    <div class="contactUsBox">
+      <h4 class="contactMainH4">Contact Us</h4>
+      <div class="contactLine"></div>
+      <p class="contactMainText">
+        Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices
+        malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros
+        feugiat.
+      </p>
+      <div class="messageButton">
+        <h4>Send us a message</h4>
+      </div>
+    </div>
+    <!-- Fin de la section Contact Us -->
+    <!-- Debut de la map -->
+    <div class="mapResponsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202405.34241565317!2d126.97413929999999!3d37.56487609999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2zU8Opb3VsLCBDb3LDqWUgZHUgU3Vk!5e0!3m2!1sfr!2sfr!4v1706273150576!5m2!1sfr!2sfr"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- Fin de la map -->
+    <!-- Debut du footer -->
+    <div class="footerBox">
+      <div class="footerTinkerBox">
+        <div class="footerLogo">
+          <a href="" class="logoTitle"><em>T</em>inker</a>
+        </div>
+        <p>
+          Copyright © 2020 Your Company<br />
+          Design: TemplateMo
+        </p>
+      </div>
+      <div class="footerLocationBox">
+        <h4 class="footerLocationTitle">Location</h4>
+        <ul class="locationsMainBox">
+          <li class="locationsBox">46 Raffles Ave,<br />Singapore 039803</li>
+          <li class="locationsBox">12 Republic Blvd,<br />Singapore 038975</li>
+        </ul>
+      </div>
+      <div class="footerInfoBox">
+        <h4 class="footerInfoTitle">More Info</h4>
+        <ul class="infoMainBox">
+          <li class="infoBox"><em>Phone</em>: 040-040-0440</li>
+          <li class="infoBox"><em>Email</em>: tk@company.co</li>
+        </ul>
+      </div>
+      <div class="footerSocialBox">
+        <p>GET SOCIAL WITH US</p>
+        <ul class="footerSocialList">
+          <li>
+            <a><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-brands fa-google"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-rss"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-basketball"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fin du footer -->
     <script src="/js/burger.js"></script>
     <script src="/js/portfolio.js"></script>
   </body>
