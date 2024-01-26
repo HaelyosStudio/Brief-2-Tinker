@@ -23,6 +23,9 @@ Lancer Live Server
 
 Vous entamez la réalisation du projet d’un client (client #1) acquis il y à plusieurs semaines et, parallèlement, vous apprenez que vous avez remporté un autre contrat (client #2) 🎉 !
 
+### Ceci est le site du client #1
+[Cliquer ici pour voir le site du client #2](https://github.com/HaelyosStudio/briefDOOM)
+
 ​
 
 Tout est prêt pour commencer la réalisation du premier projet (client #1), car celui-ci est planifié depuis plusieurs semaines. Malheureusement, pour le second projet (client #2), il s'avère non seulement très challengeant, mais le client a également avancé la date de livraison, et rien n'est prêt pour commencer son projet... Vous disposez d'une semaine pour lui confirmer si vous serez en mesure de respecter ce nouveau délai. Avec votre binôme, vous décidez alors de vous concentrer sur le premier projet durant cette semaine.
