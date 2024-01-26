@@ -74,6 +74,33 @@
     list-style-type: none;
 }
 
+.navBurgerChoices {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    gap: 10px;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.scrollBurgerBox {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+    border-bottom: 1px solid lightgrey;
+    opacity: 0.;
+}
+.scrollBurgerLink {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: small;
+}
+        
 .scrollLink {
     background-color: transparent;
     color: white;
@@ -171,11 +198,23 @@
 @media screen and ( min-width: 768px ) {
     .navBarToggle {
         display: none;
+        transition-duration: 0.2s;
     }
     .navBarChoices {
         display: flex;
         gap: 50px;
         font-size: small;
+        transition-duration: 0.2s;
+    }
+
+    .navBurgerChoices{
+        display: none;
+        width: unset;
+        transition-duration: 0.2s;
+    }
+    .scrollBurgerBox{
+        display: none;
+        transition-duration: 0.2s;
     }
 }
 
