@@ -11,3 +11,11 @@ function burgerOpenClose() {
   isBurgerHidden = !isBurgerHidden;
 }
 
+window.addEventListener("scroll", function() {
+  var navBar = document.querySelector(".navBar");
+  if (window.scrollY > 0) {
+      navBar.classList.add("scrolled");
+  } else {
+      navBar.classList.remove("scrolled");
+  }
+});
