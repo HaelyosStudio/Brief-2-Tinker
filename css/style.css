@@ -1,10 +1,10 @@
-@import url(/css/home.css);
-@import url(/css/aboutUs.css);
-@import url(/css/portfolio.css);
-@import url(/css/blog.css);
-@import url(/css/contactUs.css);
-@import url(/css/review.css);
-@import url(/css/footer.css);
+@import url(css/home.css);
+@import url(css/aboutUs.css);
+@import url(css/portfolio.css);
+@import url(css/blog.css);
+@import url(css/contactUs.css);
+@import url(css/review.css);
+@import url(css/footer.css);
 
 * {
     padding: 0;
